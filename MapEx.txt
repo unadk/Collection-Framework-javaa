@@ -1,0 +1,18 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapEx {
+    public static void main(String[] args) {
+        Map<Integer, String> students = new HashMap<>();
+
+        students.put(56, "vishesh");
+        students.put(78, "nirmit");
+        students.put(89, "yug");
+
+        System.out.println(students.keySet());
+
+        for (Integer key : students.keySet()) {
+            System.out.println(key + ":" + students.get(key));
+        }
+    }
+}
